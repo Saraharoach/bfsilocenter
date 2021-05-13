@@ -6,17 +6,17 @@
   <title>Title of map</title>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
   <!-- Find unique fonts at Google Fonts -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: #d3d3d3;
-      font-family: 'Open Sans', sans-serif;
+      background: #f1edcc;
+      font-family: 'Dosis', sans-serif;
       font-weight: 400;
-      color: #3d3d3d;
+      color: #645941;
     }
 
     section {
@@ -25,7 +25,7 @@
     }
 
     h1 {
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Bebas Neue', sans-serif;
       font-weight: 300;
       font-size: 2.5em;
       /* The em unit. 3x the current size */
@@ -34,9 +34,9 @@
     }
 
     h2 {
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 700;
-      color: gray;
+      font-family: 'Bebas Neue', sans-serif;
+      font-weight: 400;
+      color: #645941;
       font-size: 1.25em;
       letter-spacing: .04em;
     }
@@ -94,33 +94,44 @@
 
 <body>
   <div id='map'>
-    <img src='titlemap/Layoutcrop.jpg' class="max-image-width">
+    <img src='titlemap/Layoutcrop2.jpg' class="max-image-width">
   </div>
   <section>
     <a href='graphics/name-of-big-map.png' class="linkbox">High resolution version</a>
     <!-- Add you information below -->
-    <h1>Name of map</h1>
+    <h1>Brown-Forman Silo Center in Louisville, Kentucky</h1>
 
     <!--  Dude! This is your map. -->
-    <h2>Authored by: You</h2>
-
+    <h3>Authored by: Sarah Roach </h3>
+    <h2> Introduction and Goals</h2>
+    <h3> The Brown-Forman Silo Center is located in Turkey Run Park in the Parklands in Louisville, Kentucky. This area of the Parklands was a former diary farm that has been transformed into a community space featuring the Pignic Barn, the Farmer’s Table, Hockensmith Barn, and the 60-foot Silo Lookout. I wanted to highlight this unique area of Louisville that I visit all the time. I also wanted to learn more about this area's history and geography. </h3>
+    <img src='images/siloview.jpg' class="max-image-width">
+    <h3>A view from the silo lookout from https://www.josephandjoseph.net/project/the-parklands-of-floyds-fork-brown-forman-silo-center/ </h3>
     <!-- Details about how the map was made, data sources, and any other relevant information. -->
-    <h3>Map details</h3>
-    <p>
+    <h2>Basemap</h2>
+    <h3>This is a basemap of the Brown-Forman Silo Center using a hillshade and arieal photoography</h3>
+    <p> 
         <img src='basemap/Layout.jpg' class="max-image-width">
     </p>
-    <p>    <h3>Slideshow</h3>
+    <a href='graphics/name-of-big-map.png' class="linkbox">Full Image</a>
+    <p>    <h2>Slideshow</h2>
+      <h3>This slideshow looks at the unique places at Brown-Forman Silo Center and also includes a LiDAR point cloud.</h3>
 
     <iframe title="Brown-Forman Silo Center" width="1024" height="576" 
     src="https://cesium.com/ion/stories/viewer/?id=61c9e841-900d-427a-9140-cc7fd8f53ef9" 
     frameborder="0" allow="fullscreen" allowfullscreen="true" mozallowfullscreen="true" 
     webkitallowfullscreen="true"></iframe>
-
+    <a href='https://cesium.com/ion/stories/viewer/?id=61c9e841-900d-427a-9140-cc7fd8f53ef9' class="linkbox">Link</a>
     <hr>
-
+    <img src='images/silobarn.jpg' class="max-image-width">
+    <h3>The view of the silo from inside Hockensmith barn from https://www.josephandjoseph.net/project/the-parklands-of-floyds-fork-brown-forman-silo-center/ </h3>
     <h3>Map details</h3>
-    <p>How was this map made?</p>
-      University of Kentucky GEO 409, Spring 2018.
+    <h3>Created by Sarah Roach as a part of a final project in GEO 409 (Spring 2021) at the University of Kentucky
+      Elevation data from the Kentucky's Elevation Data & Aerial Photography Program (KyFromAbove.ky.gov). Color aerial imagery from the National Agriculture Imagery Program (NAIP)
+      Cesium Ion was used to create the slideshow with information and image sources from https://theparklands.org/ and https://www.josephandjoseph.net/
+      ArcGIS Pro was used to process LiDAR data and a Python script was developed to automate this process and is found in this Jupyter Notebook
+      
+      </h3>
     </p>
     <hr>
     <ul>
